@@ -1,15 +1,21 @@
 @import 'tailwindcss';
+@import 'primeicons/primeicons.css';
+@plugin "tailwindcss-primeui";
 
-/* Import Plus Jakarta Sans */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+/* 1. Define the stack order. The LAST one in the list wins. */
+@layer primeng, tailwind-utilities;
 
 @theme {
-  /* This variable sets the global default for your app */
-  --default-font-family: 'Plus Jakarta Sans', sans-serif;
-
-  /* This creates the 'font-jakarta' utility class if you need it specifically */
   --font-jakarta: 'Plus Jakarta Sans', sans-serif;
-
-  /* Your sidebar color from earlier */
+  --default-font-family: var(--font-jakarta);
   --color-sidebar: #e8e1da;
+}
+
+/* 2. Wrap the utility import in that layer */
+@layer tailwind-utilities {
+  @import 'tailwindcss/utilities';
+}
+
+:root {
+  --p-font-family: var(--font-jakarta);
 }
