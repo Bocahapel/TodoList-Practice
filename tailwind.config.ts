@@ -5,6 +5,10 @@ export default {
       colors: {
         sidebar: '#E8E1DA',
       },
+      // Add this section
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
     },
   },
   plugins: [],

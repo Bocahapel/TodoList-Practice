@@ -1,3 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss';
 
-@import "tailwindcss";
+@theme {
+  /* Define your custom font */
+  --font-montserrat: 'Montserrat', sans-serif;
+
+  /* Define your custom color */
+  --color-sidebar: #e8e1da;
+}

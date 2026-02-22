@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { TaskMain } from './task-main/task-main';
 
 @Component({
@@ -7,4 +8,6 @@ import { TaskMain } from './task-main/task-main';
   templateUrl: './tasks.html',
   styleUrl: './tasks.css',
 })
-export class Tasks {}
+export class Tasks {
+  today = new Date();
+}
