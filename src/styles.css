@@ -9,6 +9,8 @@
   --font-jakarta: 'Plus Jakarta Sans', sans-serif;
   --default-font-family: var(--font-jakarta);
   --color-sidebar: #e8e1da;
+  --color-task-hover: #f2e9e4;
+  --color-task-active: #4a4e69;
 }
 
 /* 2. Wrap the utility import in that layer */
